@@ -20,7 +20,7 @@ COPY \
 RUN \
     chmod +x /init.sh
 
-CMD ["/usr/sbin/mesos-slave", "--no-hostname_lookup"]
+CMD ["/usr/sbin/mesos-slave"]
 
 ENV MESOS_WORK_DIR /tmp/mesos
 ENV MESOS_CONTAINERIZERS docker,mesos
