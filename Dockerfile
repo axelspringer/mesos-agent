@@ -10,7 +10,7 @@ COPY \
 RUN \
     chmod +x /init.sh
 
-CMD ["/usr/sbin/mesos-master", "--registry=in_memory", "--no-hostname_lookup", "true"]
+CMD ["/usr/sbin/mesos-slave", "--no-hostname_lookup"]
 
 ENV MESOS_WORK_DIR /tmp/mesos
 

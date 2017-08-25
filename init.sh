@@ -3,14 +3,12 @@
 # principal
 PRINCIPAL=${PRINCIPAL:-root}
 
-# scret
+# set secret
 if [ -n "$SECRET" ]; then
-    export MESOS_AUTHENTICATE=true
-    export MESOS_AUTHENTICATE_SLAVES=true
-    touch /tmp/credentials
-    chmod 600 /tmp/credentials
-    printf '%s %s' "$PRINCIPAL" "$SECRET" > /tmp/credentials
-    export MESOS_CREDENTIALS=/tmp/credentials
+    touch /tmp/credential
+    chmod 600 /tmp/credential
+    printf '%s %s' "$PRINCIPAL" "$SECRET" > /tmp/credential
+    export MESOS_CREDENTIAL=/tmp/credential
 fi
 
 # use EC2 IPv4 Address
