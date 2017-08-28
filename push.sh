@@ -2,9 +2,8 @@
 
 push() {
   MESOS_VERSION=$1
-  MESOSPHERE_TAG=$2
 
-  TAG=${MESOS_VERSION}-${MESOSPHERE_TAG}
+  TAG=${MESOS_VERSION}
 
   ROLE=${3:-agent}
 
@@ -17,5 +16,5 @@ push() {
 # login docker before push
 docker login -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD"
 
-#    Mesos version     Mesosphere tag
-push "1.3.0"	  	   "2.0.3"
+#    Mesos version
+push "1.3.1"

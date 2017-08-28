@@ -8,7 +8,7 @@ http://mesos.apache.org/
 
 # use
 
-[![](https://badge.imagelayers.io/pixelmilk/mesos-agent:1.3.0-2.0.3.svg)](https://imagelayers.io/?images=pixelmilk/mesos-agent:1.3.0-2.0.3)
+[![](https://badge.imagelayers.io/pixelmilk/mesos-agent:1.3.1.svg)](https://imagelayers.io/?images=pixelmilk/mesos-agent:1.3.1)
 
 > all mesos arguments are accessible via `MESOS_*` environment variables 
 
@@ -20,7 +20,7 @@ docker run -d \
 -v /sys/fs/cgroup:/sys/fs/cgroup \
 -v /var/run/docker.sock:/var/run/docker.sock \
 --name slave --net host --privileged --restart always \
---name mesos-agent pixelmilk/mesos-agent:1.3.0-2.0.4
+--name mesos-agent pixelmilk/mesos-agent:1.3.1
 ```
 
 Set environment variable `SECRET` to enable framework and slave authentication.
