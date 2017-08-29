@@ -3,7 +3,7 @@ MAINTAINER Sebastian Doell <sebastian@katallaxie.me>
 
 RUN \
     apt-get update && \
-    apt-get -y --no-install-recommends install apt-transport-https ca-certificates
+    apt-get -y --no-install-recommends install curl apt-transport-https ca-certificates
 
 # https://github.com/Yelp/dumb-init
 RUN curl -fLsS -o /usr/local/bin/dumb-init https://github.com/Yelp/dumb-init/releases/download/v1.0.2/dumb-init_1.0.2_amd64 && chmod +x /usr/local/bin/dumb-init
