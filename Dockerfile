@@ -1,4 +1,4 @@
-FROM pixelmilk/mesos:1.3.0-2.0.3
+FROM pixelmilk/mesos:1.3.1
 MAINTAINER Sebastian Doell <sebastian@katallaxie.me>
 
 RUN \
