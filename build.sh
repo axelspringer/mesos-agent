@@ -8,12 +8,12 @@ build() {
   ROLE=${3:-agent}
 
 # build
-  echo Building pixelmilk/mesos-${ROLE}
+  echo Building axelspringer/mesos-${ROLE}
     docker build \
       --compress \
-      -t pixelmilk/mesos-${ROLE}:${TAG} \
+      -t axelspringer/mesos-${ROLE}:${TAG} \
       . || exit $?
 }
 
 #     Mesos version
-build "1.3.1"
+build "1.4.0"
